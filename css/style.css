@@ -1,0 +1,116 @@
+:root {
+    --medium-green: hsl(158, 36%, 37%);
+    --dark-green: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream);
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.container img {
+    max-width: 275px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+
+.container .card .info {
+    max-width: 275px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 24px;
+}
+
+.container .card .info .product {
+    font-size: 12px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.23rem;
+    font-weight: 500;
+    color: var(--grey);
+
+
+}
+
+.container .card .info .name {
+    font-family: 'Fraunces';
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 200px;
+    
+}
+
+.container .card .info .description {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1.3rem;
+    color: var(--grey);
+}
+
+.container .card .price {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.container .card .price .promo {
+    color: var(--medium-green);
+    font-family: 'Fraunces';
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.container .card .price .older-price {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.container .card .info .btn {
+    background-color: var(--medium-green);
+    color: var(--white);
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 700;
+    padding: 14px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.container .card .info .btn::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon-cart.svg") no-repeat center;
+    background-size: contain;
+}
